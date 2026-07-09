@@ -60,7 +60,7 @@ local resetCharge = false
 local function BoardHasAbility()
 	if not Board then return end
 	for id = 0, 2 do
-		if Board:GetPawn(id):IsAbility(pilot.Skill) then
+		if Board:GetPawn(id):IsAbility(pilot_withered.Skill) then
 			return true
 		end
 	end
